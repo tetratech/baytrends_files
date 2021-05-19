@@ -17,6 +17,14 @@ knitr::opts_chunk$set(
 cat(paste0("Last Update: ",Sys.time()))
 ```
 
+baytrendsmap 0.1.0.9002
+===========
+Released - 2021-05-19
+
+* sample png files added to directory nlt_fp
+* created Rproj
+* added nlt_fp directory
+
 baytrendsmap 0.1.0.9001
 ===========
 Released - 2021-05-19
