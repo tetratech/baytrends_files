@@ -4,7 +4,13 @@ NEWS
 
 <!-- NEWS.md is generated from NEWS.Rmd. Please edit that file -->
 
-    #> Last Update: 2021-08-16 12:40:18
+    #> Last Update: 2021-08-16 14:24:07
+
+# baytrends\_files 0.1.0.9004
+
+Released - 2021-08-16
+
+-   docs: Update README with proper URL for accessing data files
 
 # baytrends\_files 0.1.0.9003
 

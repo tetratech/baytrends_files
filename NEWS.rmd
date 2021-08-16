@@ -17,6 +17,12 @@ knitr::opts_chunk$set(
 cat(paste0("Last Update: ",Sys.time()))
 ```
 
+baytrends_files 0.1.0.9004
+===========
+Released - 2021-08-16
+
+* docs: Update README with proper URL for accessing data files
+
 baytrends_files 0.1.0.9003
 ===========
 Released - 2021-08-16

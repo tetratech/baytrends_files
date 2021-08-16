@@ -180,13 +180,12 @@ pre code {
 <div id="file-access" class="section level1">
 <h1>File Access</h1>
 <p>Example code to access files.</p>
-<p><em>example from another package, update when have files in this repo</em></p>
-<pre class="r"><code>url_mt_bugs &lt;- &quot;https://github.com/leppott/MBSStools_SupportFiles/raw/master/Data/CHAR_Bugs.csv&quot;
-df_mt_bugs &lt;- read.csv(url_mt_bugs)</code></pre>
+<pre class="r"><code>url_data &lt;- &quot;https://raw.githubusercontent.com/tetratech/baytrends_files/main/data/&quot;
+df_data &lt;- read.csv(paste0(url_data, &quot;pick_files.csv&quot;)) </code></pre>
 </div>
 <div id="naming-scheme" class="section level1">
 <h1>Naming Scheme</h1>
-<p>Files are named in a consistent manner to make them easy to parse and identify.</p>
+<p>Plot files are named in a consistent manner to make them easy to parse and identify.</p>
 <p><em>add detail</em></p>
 </div>
 
