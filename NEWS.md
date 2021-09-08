@@ -4,7 +4,14 @@ NEWS
 
 <!-- NEWS.md is generated from NEWS.Rmd. Please edit that file -->
 
-    #> Last Update: 2021-08-16 14:24:07
+    #> Last Update: 2021-09-08 12:56:34
+
+# baytrends\_files 0.1.0.9005
+
+Released - 2021-09-08
+
+-   Added "\_no\_plot.png" to plot folder for use when Shiny app uses
+    data other than ‘Full Period’.
 
 # baytrends\_files 0.1.0.9004
 
