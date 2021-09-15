@@ -4,7 +4,14 @@ NEWS
 
 <!-- NEWS.md is generated from NEWS.Rmd. Please edit that file -->
 
-    #> Last Update: 2021-09-15 10:56:15
+    #> Last Update: 2021-09-15 14:03:44
+
+# baytrends\_files 0.1.0.9007
+
+Released - 2021-09-15
+
+-   feature: Add additional directories for other data sets
+-   refactor: Update pick\_files.csv with plot directory names
 
 # baytrends\_files 0.1.0.9006
 
