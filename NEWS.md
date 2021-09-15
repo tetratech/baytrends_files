@@ -4,7 +4,24 @@ NEWS
 
 <!-- NEWS.md is generated from NEWS.Rmd. Please edit that file -->
 
-    #> Last Update: 2021-09-08 12:56:34
+    #> Last Update: 2021-09-15 10:56:15
+
+# baytrends\_files 0.1.0.9006
+
+Released - 2021-09-15
+
+-   refactor: Renamed plots folder, baytrends map issue 50
+    -   <https://github.com/tetratech/baytrendsmap/issues/50>
+-   refactor: Add Flow Adjusted plots folder
+-   docs: Updated README
+-   docs: Add DESCRIPTION
+
+# baytrends\_files 0.1.0.9005
+
+Released - 2021-09-08
+
+-   Added "\_no\_plot.png" to plot folder for use when Shiny app uses
+    data other than ‘Full Period’.
 
 # baytrends\_files 0.1.0.9005
 

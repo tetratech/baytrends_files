@@ -17,6 +17,23 @@ knitr::opts_chunk$set(
 cat(paste0("Last Update: ",Sys.time()))
 ```
 
+baytrends_files 0.1.0.9006
+===========
+Released - 2021-09-15
+
+* refactor: Renamed plots folder, baytrends map issue 50
+    + https://github.com/tetratech/baytrendsmap/issues/50
+* refactor: Add Flow Adjusted plots folder
+* docs: Updated README
+* docs: Add DESCRIPTION
+
+baytrends_files 0.1.0.9005
+===========
+Released - 2021-09-08
+
+* Added "_no_plot.png" to plot folder for use when Shiny app uses data other
+than 'Full Period'.
+
 baytrends_files 0.1.0.9005
 ===========
 Released - 2021-09-08
