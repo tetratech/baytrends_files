@@ -17,6 +17,15 @@ knitr::opts_chunk$set(
 cat(paste0("Last Update: ",Sys.time()))
 ```
 
+baytrends_files 0.1.0.9009
+===========
+Released - 2021-12-06
+
+* refactor: Update data files for 2020
+    + Rename FullPeriod files with year
+    + Keep picklist.csv for each year
+    + Did not update plots
+
 baytrends_files 0.1.0.9008
 ===========
 Released - 2021-09-15
