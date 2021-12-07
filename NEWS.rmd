@@ -17,12 +17,17 @@ knitr::opts_chunk$set(
 cat(paste0("Last Update: ",Sys.time()))
 ```
 
+baytrends_files 0.1.0.9011
+===========
+Released - 2021-12-07
+
+* fix: Update 2020 data files with mapLayer (version 2)
+
 baytrends_files 0.1.0.9010
 ===========
 Released - 2021-12-06
 
 * fix: Update 2020 data files with mapLayer
-
 
 baytrends_files 0.1.0.9009
 ===========
