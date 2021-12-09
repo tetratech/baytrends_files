@@ -17,6 +17,12 @@ knitr::opts_chunk$set(
 cat(paste0("Last Update: ",Sys.time()))
 ```
 
+baytrends_files 0.1.0.9012
+===========
+Released - 2021-12-08
+
+* refactor: Update 2020 data files to ensure have most current version
+
 baytrends_files 0.1.0.9011
 ===========
 Released - 2021-12-07
