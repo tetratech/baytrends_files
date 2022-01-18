@@ -17,6 +17,12 @@ knitr::opts_chunk$set(
 cat(paste0("Last Update: ",Sys.time()))
 ```
 
+baytrends_files 0.1.0.9014
+===========
+Released - 2022-01-18
+
+* feature: Added background PDF, TidalWaterQualityChange.pdf
+
 baytrends_files 0.1.0.9013
 ===========
 Released - 2021-12-08
