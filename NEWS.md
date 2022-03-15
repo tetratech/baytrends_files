@@ -4,7 +4,13 @@ NEWS
 
 <!-- NEWS.md is generated from NEWS.Rmd. Please edit that file -->
 
-    #> Last Update: 2022-01-18 14:14:14
+    #> Last Update: 2022-03-15 13:11:59
+
+# baytrends_files 0.2
+
+Released - 2022-03-15
+
+-   refactor: Revised figures with new format (Rebecca Murphy)
 
 # baytrends_files 0.1.0.9014
 
