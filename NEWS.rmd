@@ -17,6 +17,12 @@ knitr::opts_chunk$set(
 cat(paste0("Last Update: ",Sys.time()))
 ```
 
+baytrends_files 0.4
+===========
+Released - 2022-07-15
+
+* refactor: Combine data files from 6 to 4, Issue #1
+
 baytrends_files 0.3
 ===========
 Released - 2022-07-14
