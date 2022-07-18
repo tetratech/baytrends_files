@@ -4,17 +4,23 @@ NEWS
 
 <!-- NEWS.md is generated from NEWS.Rmd. Please edit that file -->
 
-    #> Last Update: 2022-07-18 14:47:09
+    #> Last Update: 2022-07-18 15:22:59
+
+# baytrends_files 0.7
+
+Released - 2022-07-18
+
+-   fix: Update “no data” plot text to exclude DIN and PO4 parameters
 
 # baytrends_files 0.6
 
-Released - 2022-07-15
+Released - 2022-07-18
 
 -   fix: Update combination of files from six to four, Issue #1
 
 # baytrends_files 0.5
 
-Released - 2022-07-15
+Released - 2022-07-18
 
 -   fix: Update data files for consistenty, Long Term, Issue #2
     -   File names, pick list, folder, no data plot, period in csv
