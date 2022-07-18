@@ -4,7 +4,27 @@ NEWS
 
 <!-- NEWS.md is generated from NEWS.Rmd. Please edit that file -->
 
-    #> Last Update: 2022-03-15 13:11:59
+    #> Last Update: 2022-07-18 13:08:49
+
+# baytrends_files 0.5
+
+Released - 2022-07-15
+
+-   fix: Update data files for consistenty, Long Term, Issue #2
+    -   File names, pick list, folder, no data plot, period in csv
+-   refacator: Move old data files to “old” subdirectory of data
+
+# baytrends_files 0.4
+
+Released - 2022-07-15
+
+-   refactor: Combine data files from 6 to 4, Issue #1
+
+# baytrends_files 0.3
+
+Released - 2022-07-14
+
+-   refactor: Combine data files from 6 to 4, Issue #1
 
 # baytrends_files 0.2
 
