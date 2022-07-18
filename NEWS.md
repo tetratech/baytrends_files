@@ -4,7 +4,13 @@ NEWS
 
 <!-- NEWS.md is generated from NEWS.Rmd. Please edit that file -->
 
-    #> Last Update: 2022-07-18 13:08:49
+    #> Last Update: 2022-07-18 14:47:09
+
+# baytrends_files 0.6
+
+Released - 2022-07-15
+
+-   fix: Update combination of files from six to four, Issue #1
 
 # baytrends_files 0.5
 

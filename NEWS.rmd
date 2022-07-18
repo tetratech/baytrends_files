@@ -17,6 +17,12 @@ knitr::opts_chunk$set(
 cat(paste0("Last Update: ",Sys.time()))
 ```
 
+baytrends_files 0.6
+===========
+Released - 2022-07-15
+
+* fix: Update combination of files from six to four, Issue #1
+
 baytrends_files 0.5
 ===========
 Released - 2022-07-15
