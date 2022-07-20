@@ -4,7 +4,14 @@ NEWS
 
 <!-- NEWS.md is generated from NEWS.Rmd. Please edit that file -->
 
-    #> Last Update: 2022-07-18 15:22:59
+    #> Last Update: 2022-07-20 11:59:47
+
+# baytrends_files 0.7.1
+
+Released - 2022-07-18
+
+-   refactor: Update GitHub repo so it doesn’t include “old” files.
+-   refactor: Remove “old” files
 
 # baytrends_files 0.7
 

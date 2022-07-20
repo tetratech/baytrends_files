@@ -1,5 +1,0 @@
-radio,names,dir_plot,show_plots
-Non-linear Trend (Long Period),NLT_FA_F_FullPeriod_20192020.csv,plots_NLT_FA_F_FP,TRUE
-Non-linear Trend (Short Term),NLT_FA_F_ShortTerm_20192020.csv,plots_NLT_FA_F_ST,FALSE
-Non-linear Trend with Flow Adjustment (Long Period),NLT_FA_T_FullPeriod_20192020.csv,plots_NLT_FA_T_FP,FALSE
-Non-linear Trend with Flow Adjustment (Short Term),NLT_FA_T_ShortTerm_20192020.csv,plots_NLT_FA_T_ST,FALSE
