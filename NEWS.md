@@ -4,11 +4,17 @@ NEWS
 
 <!-- NEWS.md is generated from NEWS.Rmd. Please edit that file -->
 
-    #> Last Update: 2022-11-18 15:30:31
+    #> Last Update: 2022-11-18 15:40:08
+
+# baytrends_files 0.7.4
+
+Released - 2022-11-18
+
+- refactor: Add data to test folder
 
 # baytrends_files 0.7.3
 
-Released - 2022-07-20
+Released - 2022-11-18
 
 - refactor: Add test folder for 2021 data plots for testing
 
