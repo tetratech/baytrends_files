@@ -17,6 +17,12 @@ knitr::opts_chunk$set(
 cat(paste0("Last Update: ",Sys.time()))
 ```
 
+baytrends_files 0.7.3
+===========
+Released - 2022-07-20
+
+* refactor: Add test folder for 2021 data plots for testing
+
 baytrends_files 0.7.2
 ===========
 Released - 2022-07-20
