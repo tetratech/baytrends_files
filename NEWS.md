@@ -4,7 +4,13 @@ NEWS
 
 <!-- NEWS.md is generated from NEWS.Rmd. Please edit that file -->
 
-    #> Last Update: 2022-11-18 15:40:08
+    #> Last Update: 2022-11-18 16:03:10
+
+# baytrends_files 0.7.5
+
+Released - 2022-11-18
+
+\*fix: Rename files to old naming convention
 
 # baytrends_files 0.7.4
 
