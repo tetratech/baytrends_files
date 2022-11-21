@@ -4,7 +4,16 @@ NEWS
 
 <!-- NEWS.md is generated from NEWS.Rmd. Please edit that file -->
 
-    #> Last Update: 2022-11-18 16:03:10
+    #> Last Update: 2022-11-21 17:23:23
+
+# baytrends_files 0.7.6
+
+Released - 2022-11-21
+
+- refactor: Create data-raw folder and add old data and processing
+  scripts
+  - 2019 and 2020
+- refactor: Add 2021 data and processing script, Issue \#3
 
 # baytrends_files 0.7.5
 
