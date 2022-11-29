@@ -20,7 +20,12 @@
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # 2022-11-21, EWL
 # 2021 data from Rebecca (2022-11-09), same format as 2020 data
+# add "useNA" to table()
+# add testthat check
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+# Packages
+#library(testthat)
 
 # Data ----
 dn_data <- file.path("data-raw", "data_final_2021")
@@ -29,12 +34,13 @@ fn_data <- "baytrendsmaps_2021_chngCombo.csv"
 df_data <- read.csv(unz(file.path(dn_data, fn_zip), fn_data))
 
 # QC
-table(df_data$gamName)
-table(df_data$periodName)
-table(df_data$gamName, df_data$periodName)
-table(df_data$dep)
-table(df_data$layer)
-table(df_data$seasonName)
+table(df_data$gamName, useNA = "ifany")
+table(df_data$periodName, useNA = "ifany")
+table(df_data$gamName, df_data$periodName, useNA = "ifany")
+table(df_data$dep, useNA = "ifany")
+table(df_data$layer, useNA = "ifany")
+table(df_data$seasonName, useNA = "ifany")
+table(df_data$state, useNA = "ifany")
 str(df_data)
 
 # Loads 6 data sets (2019)
@@ -56,12 +62,12 @@ df_data$mapLayer <- paste(toupper(df_data$dep)
 
 # gamName ----
 # different from 2020
-table(df_data$gamOption)
+table(df_data$gamOption, useNA = "ifany")
 
 df_data$gamName[df_data$gamOption == 2 | df_data$gamOption == 3] <- "Non-Linear Trend"
 df_data$gamName[df_data$gamOption == 4 | df_data$gamOption == 5] <- "Non-Linear Trend with Flow Adjustment"
 
-table(df_data$gamName)
+table(df_data$gamName, useNA = "ifany")
 
 table(df_data$gamName, df_data$periodName, useNA = "ifany")
 
@@ -103,7 +109,13 @@ NLT_FA_T_LongTerm <- dplyr::filter(df_data
                                    , gamName == "Non-Linear Trend with Flow Adjustment"
                                    & periodName != "2012/13-2020/21")
 
-
+# QC
+nrow_orig <- nrow(df_data)
+nrow_parts <- nrow(NLT_FA_F_ShortTerm) + 
+  nrow(NLT_FA_F_LongTerm) + 
+  nrow(NLT_FA_T_ShortTerm) + 
+  nrow(NLT_FA_T_LongTerm)
+testthat::expect_equal(nrow_orig, nrow_parts )
 
 # Data not documented in package so don't have to updated data.R
 

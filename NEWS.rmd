@@ -17,6 +17,12 @@ knitr::opts_chunk$set(
 cat(paste0("Last Update: ",Sys.time()))
 ```
 
+baytrends_files 0.7.7
+===========
+Released - 2022-11-29
+
+* fix: Update 2021 data files in test folder, Issue #3
+
 baytrends_files 0.7.6
 ===========
 Released - 2022-11-21
