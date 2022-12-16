@@ -17,6 +17,12 @@ knitr::opts_chunk$set(
 cat(paste0("Last Update: ",Sys.time()))
 ```
 
+baytrends_files 0.7.8
+===========
+Released - 2022-12-16
+
+* refactor:  Rename 2021 "test" folder to "2021", Issue #3
+
 baytrends_files 0.7.7
 ===========
 Released - 2022-11-29

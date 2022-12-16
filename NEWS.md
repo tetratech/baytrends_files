@@ -4,7 +4,13 @@ NEWS
 
 <!-- NEWS.md is generated from NEWS.Rmd. Please edit that file -->
 
-    #> Last Update: 2022-11-29 08:17:51
+    #> Last Update: 2022-12-16 11:54:55
+
+# baytrends_files 0.7.8
+
+Released - 2022-12-16
+
+- refactor: Rename 2021 “test” folder to “2021”, Issue \#3
 
 # baytrends_files 0.7.7
 
