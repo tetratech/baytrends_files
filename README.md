@@ -39,3 +39,13 @@ Plots are in folders with the following naming scheme:
 * T or F = TRUE or FALSE (Flow Adjusted)
 
 * FP = Full Period
+
+# File Structure
+
+All files to be served up to the Shiny app are in the folder "data".
+
+Each year will have its own folder and the current files will be in the folder 
+"current_year".
+
+The CBP version of the app hosts these files on their own servers for faster
+response times.

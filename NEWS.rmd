@@ -17,6 +17,16 @@ knitr::opts_chunk$set(
 cat(paste0("Last Update: ",Sys.time()))
 ```
 
+baytrends_files 0.7.9
+===========
+Released - 2023-08-03
+
+* refactor: Reorganize folders into a more workable structure, Issue #4
+
+* docs: Update ReadMe with file structure information, Issue #4
+
+* docs: Added a ReadMe file to the data folder
+
 baytrends_files 0.7.8
 ===========
 Released - 2022-12-16

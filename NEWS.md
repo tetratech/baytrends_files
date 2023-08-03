@@ -4,7 +4,17 @@ NEWS
 
 <!-- NEWS.md is generated from NEWS.Rmd. Please edit that file -->
 
-    #> Last Update: 2022-12-16 11:54:55
+    #> Last Update: 2023-08-03 07:20:59.742173
+
+# baytrends_files 0.7.9
+
+Released - 2023-08-03
+
+- refactor: Reorganize folders into a more workable structure, Issue \#4
+
+- docs: Update ReadMe with file structure information, Issue \#4
+
+- docs: Added a ReadMe file to the data folder
 
 # baytrends_files 0.7.8
 
