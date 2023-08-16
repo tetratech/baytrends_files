@@ -1,3 +1,10 @@
+README
+================
+<Erik.Leppo@tetratech.com> and <jon.harcum@tetratech.com>
+
+<!-- NEWS.md is generated from README.Rmd. Please edit that file -->
+
+    #> Last Update: 2023-08-16 14:02:32.271498
 
 # baytrends_files
 
@@ -7,45 +14,59 @@ Repository to store baytrends R package outputs to be used with maps.
 <!-- badges: end -->
 
 # Installation
-No installation as these files are meant to be accessed by the baytrendsmap 
-Shiny app.
 
-https://baytrends.chesapeakebay.net/baytrendsmap/
+No installation as these files are meant to be accessed by the
+baytrendsmap Shiny app.
+
+Production version:
+
+<https://baytrends.chesapeakebay.net/baytrendsmap/>
+
+Testing version:
+
+<https://tetratech-wtr-wne.shinyapps.io/baytrendsmap/>
 
 # File Access
+
 Example code to access files.
 
-```r
+``` r
 url_data <- "https://raw.githubusercontent.com/tetratech/baytrends_files/main/data/"
 df_data <- read.csv(paste0(url_data, "pick_files.csv")) 
 ```
 
 # Naming Scheme
-Plot files are named in a consistent manner to make them easy to parse and 
-identify (Station_Parameter_MapLayer).
+
+Plot files are named in a consistent manner to make them easy to parse
+and identify (Station_Parameter_MapLayer).
 
 Map Layer:
 
-* B = Bottom
+- B = Bottom
 
-* S = Surface
+- S = Surface
 
 Plots are in folders with the following naming scheme:
 
-* NLT = Non-Linear Trend
+- NLT = Non-Linear Trend
 
-* FA = Flow Adjusted
+- FA = Flow Adjusted
 
-* T or F = TRUE or FALSE (Flow Adjusted)
+- T or F = TRUE or FALSE (Flow Adjusted)
 
-* FP = Full Period
+- ST or FT = Short Term or Long Term
 
 # File Structure
 
-All files to be served up to the Shiny app are in the folder "data".
+All files to be served up to the Shiny app are in the folder “data”.
 
-Each year will have its own folder and the current files will be in the folder 
-"current_year".
+Each year will have its own folder and the current files will be in the
+folder “current_year”.
 
-The CBP version of the app hosts these files on their own servers for faster
-response times.
+The CBP version of the app hosts these files on their own servers for
+faster response times.
+
+# Updates
+
+More information on file structure and yearly updates in
+“data/ReadMe_data.txt”

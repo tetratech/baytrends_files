@@ -4,9 +4,18 @@ NEWS
 
 <!-- NEWS.md is generated from NEWS.Rmd. Please edit that file -->
 
-    #> Last Update: 2023-08-03 07:20:59.742173
+    #> Last Update: 2023-08-16 13:57:57.616291
 
-# baytrends_files 0.7.9
+# baytrends_files v0.7.10
+
+Released - 2023-08-16
+
+- docs: Add documentation about provenance and naming of data sets
+
+- docs: Add documentation about how to update repository for new data
+  sets
+
+# baytrends_files v0.7.9
 
 Released - 2023-08-03
 
