@@ -4,7 +4,15 @@ NEWS
 
 <!-- NEWS.md is generated from NEWS.Rmd. Please edit that file -->
 
-    #> Last Update: 2023-08-16 13:57:57.616291
+    #> Last Update: 2023-08-17 10:16:05.068654
+
+# baytrends_files v0.7.11
+
+Released - 2023-08-16
+
+- docs: Add more comments for non-R users to yearly process data script
+
+  - Added to 2021 file in data-raw folder
 
 # baytrends_files v0.7.10
 

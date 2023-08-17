@@ -17,6 +17,13 @@ knitr::opts_chunk$set(
 cat(paste0("Last Update: ",Sys.time()))
 ```
 
+baytrends_files v0.7.11
+===========
+Released - 2023-08-16
+
+* docs: Add more comments for non-R users to yearly process data script
+
+     + Added to 2021 file in data-raw folder
 
 baytrends_files v0.7.10
 ===========
