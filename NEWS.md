@@ -4,7 +4,13 @@ NEWS
 
 <!-- NEWS.md is generated from NEWS.Rmd. Please edit that file -->
 
-    #> Last Update: 2023-09-27 13:53:31.156858
+    #> Last Update: 2023-09-27 14:15:31.352207
+
+# baytrends_files v0.7.14
+
+Released - 2023-09-27
+
+- docs: Rename ReadMe file in data directory
 
 # baytrends_files v0.7.13
 

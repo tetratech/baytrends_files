@@ -17,6 +17,12 @@ knitr::opts_chunk$set(
 cat(paste0("Last Update: ",Sys.time()))
 ```
 
+baytrends_files v0.7.14
+===========
+Released - 2023-09-27
+
+* docs: Rename ReadMe file in data directory
+
 baytrends_files v0.7.13
 ===========
 Released - 2023-09-27
