@@ -17,6 +17,14 @@ knitr::opts_chunk$set(
 cat(paste0("Last Update: ",Sys.time()))
 ```
 
+baytrends_files v0.7.13
+===========
+Released - 2023-09-27
+
+* refactor: Add 2022 plots
+
+* refactor: Update current plots to 2022
+
 baytrends_files v0.7.12
 ===========
 Released - 2023-09-27

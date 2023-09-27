@@ -36,6 +36,7 @@
 # 2022 data from Rebecca (2022-09-21), same format as 2021 data
 ## parameterize some variables based on date
 ## Add copy to current and archive old
+## Add plots (didn't find last year's script)
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 # Packages----
@@ -212,4 +213,43 @@ fn_new <- list.files(path_out, pattern = "csv$")
 
 file.copy(file.path(path_out, fn_new)
           , file.path(path_current, fn_new))
+
+# PLOTS ----
+# Remove files from current folder (except _no_plot.png)
+# Copy files from download to 2022 folder
+# Rename files (surf and bot to S and B)
+# Copy files from 2022 to current
+
+path_plot_new <- "G:\\baytrendsmap\\data_2022_Rebecca_20230921\\baytrendsmap_graphs"
+path_plot_year <- file.path("data", yr_data)
+path_plot_current <- file.path("data", "current")
+
+# create yr_data directory
+path_plot_year_sub <- file.path(path_plot_year, "plots_NLT_FA_F_LT")
+if (!dir.exists(path_plot_year_sub)) {dir.create(path_plot_year_sub)}
+
+# Names of "NEW" plots
+fn_plot_new  <- list.files(path_plot_new, full.names = TRUE, recursive = TRUE)
+
+# remove "old" 'current' plots
+fn_plot_old_all <- list.files(file.path(path_plot_current, "plots_NLT_FA_F_LT"))
+fn_plot_old_remove <- fn_plot_old_all[!(fn_plot_old_all %in% "_no_plot.png")]
+file.remove(file.path(path_plot_current, "plots_NLT_FA_F_LT", fn_plot_old_remove))
+
+# Add "new" 'year' plots (RENAME)
+fn_plot_year <- sub("_surf.png$", "_S.png", fn_plot_new)
+fn_plot_year <- sub("_bot.png$", "_B.png", fn_plot_year)
+fn_plot_year_year <- normalizePath(file.path(path_plot_year
+                                        , "plots_NLT_FA_F_LT"
+                                        , basename(fn_plot_year)))
+file.copy(fn_plot_new, fn_plot_year_year)
+
+# Add "new" 'current' plots
+fn_plot_year_current <- normalizePath(file.path(path_plot_current
+                                             , "plots_NLT_FA_F_LT"
+                                             , basename(fn_plot_year)))
+file.copy(fn_plot_year_year, fn_plot_year_current)
+
+
+
 
