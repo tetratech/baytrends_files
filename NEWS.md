@@ -4,7 +4,13 @@ NEWS
 
 <!-- NEWS.md is generated from NEWS.Rmd. Please edit that file -->
 
-    #> Last Update: 2023-09-28 08:14:07.134621
+    #> Last Update: 2023-09-28 08:21:32.568192
+
+# baytrends_files v0.7.16
+
+Released - 2023-09-28
+
+- fix: Update ‘current’ data files with ‘2022’ data files.
 
 # baytrends_files v0.7.15
 
@@ -12,6 +18,7 @@ Released - 2023-09-28
 
 - fix: Updated 2022 data
   - Files 2 and 4 blank and all data in files 1 and 2
+  - data\2022
 - fix: Updated ProcessData_ShinyData_2022.R to include more QC checks
 
 # baytrends_files v0.7.14

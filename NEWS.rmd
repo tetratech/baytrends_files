@@ -17,12 +17,19 @@ knitr::opts_chunk$set(
 cat(paste0("Last Update: ",Sys.time()))
 ```
 
+baytrends_files v0.7.16
+===========
+Released - 2023-09-28
+
+* fix: Update 'current' data files with '2022' data files.
+
 baytrends_files v0.7.15
 ===========
 Released - 2023-09-28
 
 * fix: Updated 2022 data
     + Files 2 and 4 blank and all data in files 1 and 2
+    + data\2022
 * fix: Updated ProcessData_ShinyData_2022.R to include more QC checks
 
 baytrends_files v0.7.14
