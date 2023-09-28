@@ -47,7 +47,7 @@ yr_data <- 2022
 
 
 # Variables dependent on years of the data
-pname_yr  <- "2012/13-2021/22"  # used in filter to define datasets
+pname_yr  <- "2013/14-2021/22"  # used in filter to define datasets
 file_year <- as.character(paste0(yr_data - 1, yr_data)) # used in filenames when save data
 file_year_prev <- as.character(as.numeric(file_year) - 10001)    
               # used in create pick_files.csv to designate previous year
@@ -156,6 +156,12 @@ nrow_parts <- nrow(NLT_FA_F_ShortTerm) +
   nrow(NLT_FA_T_ShortTerm) + 
   nrow(NLT_FA_T_LongTerm)
 testthat::expect_equal(nrow_orig, nrow_parts )
+
+table(df_data$gamName, df_data$periodName)
+nrow(NLT_FA_F_ShortTerm)
+nrow(NLT_FA_F_LongTerm)
+nrow(NLT_FA_T_ShortTerm)
+nrow(NLT_FA_T_LongTerm)
 
 # Data not documented in package so don't have to updated data.R
 
