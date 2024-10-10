@@ -1,0 +1,5 @@
+"radio","names","dir_plot","show_plots"
+"Non-linear Trend (Long Term)","NLT_FA_F_LongTerm_20212022.csv","plots_NLT_FA_F_LT",TRUE
+"Non-linear Trend (Short Term)","NLT_FA_F_ShortTerm_20212022.csv","plots_NLT_FA_F_ST",FALSE
+"Non-linear Trend with Flow Adjustment (Long Term)","NLT_FA_T_LongTerm_20212022.csv","plots_NLT_FA_T_LT",FALSE
+"Non-linear Trend with Flow Adjustment (Short Term)","NLT_FA_T_ShortTerm_20212022.csv","plots_NLT_FA_T_ST",FALSE
