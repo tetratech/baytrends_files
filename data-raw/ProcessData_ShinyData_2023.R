@@ -343,6 +343,9 @@ write.csv(plots_new_exp_not_obs,
 # No Data Plots ----
 
 for (p in plots_new_exp_not_obs) {
+  # replace bot and surf with B and S
+  p <- gsub("_bot$", "_B", p)
+  p <- gsub("_surf", "_S", p)
   # plot
   p_blank <- ggplot() +
     theme_void() + 

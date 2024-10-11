@@ -4,7 +4,13 @@ NEWS
 
 <!-- NEWS.md is generated from NEWS.Rmd. Please edit that file -->
 
-    #> Last Update: 2024-10-11 13:05:50.360693
+    #> Last Update: 2024-10-11 13:18:00.647564
+
+# baytrends_files v0.7.22
+
+Released - 2024-10-11
+
+- fix: Update names of missing plots to match existing naming scheme
 
 # baytrends_files v0.7.21
 
