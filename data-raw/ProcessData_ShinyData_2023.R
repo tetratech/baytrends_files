@@ -44,11 +44,13 @@
 # add check for plots vs parameter/layer
 # 2024-10-11, per Rebecca email filter out
 #   CHLA bottom and salinity
+# create "no plot" for observed data but no plot
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 # Packages----
 library(testthat)
 library(dplyr)
+library(ggplot2) # only if need to create "no plot"
 
 # GLOBAL----
 yr_data <- 2023
@@ -337,3 +339,25 @@ write.csv(plots_new_obs_not_exp,
           file.path(path_plot_new, "plots_new_no_data.csv"))
 write.csv(plots_new_exp_not_obs, 
           file.path(path_plot_new, "plots_new_missing.csv"))
+
+# No Data Plots ----
+
+for (p in plots_new_exp_not_obs) {
+  # plot
+  p_blank <- ggplot() +
+    theme_void() + 
+    labs(title = "No trends plot available for the selected dataset.",
+         subtitle = p)
+  # save
+  ggsave(filename = file.path("data-raw", paste0(p, ".png")),
+         plot = p_blank,
+         width = 1800,
+         height = 1050,
+         units = "px",
+         dpi = 300,
+         bg = "white")
+}## FOR ~ p
+# manually copy to correct folder so can review first
+
+
+

@@ -17,6 +17,13 @@ knitr::opts_chunk$set(
 cat(paste0("Last Update: ",Sys.time()))
 ```
 
+baytrends_files v0.7.20
+===========
+Released - 2024-10-11
+
+* refactor: Add missing parameter plots with "no data" plot
+* refactor: Update existing "_no_plot.png" to match size of existing plots
+
 baytrends_files v0.7.19
 ===========
 Released - 2024-10-11

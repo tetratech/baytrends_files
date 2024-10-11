@@ -4,7 +4,15 @@ NEWS
 
 <!-- NEWS.md is generated from NEWS.Rmd. Please edit that file -->
 
-    #> Last Update: 2024-10-11 11:00:57.614592
+    #> Last Update: 2024-10-11 12:48:01.759066
+
+# baytrends_files v0.7.20
+
+Released - 2024-10-11
+
+- refactor: Add missing parameter plots with “no data” plot
+- refactor: Update existing “\_no_plot.png” to match size of existing
+  plots
 
 # baytrends_files v0.7.19
 
