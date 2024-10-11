@@ -41,10 +41,14 @@
 # 2023 data
 # 2024-10-04, EWL
 # 2023 data from Rebecca (2024-09-18)
+# add check for plots vs parameter/layer
+# 2024-10-11, per Rebecca email filter out
+#   CHLA bottom and salinity
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 # Packages----
-#library(testthat)
+library(testthat)
+library(dplyr)
 
 # GLOBAL----
 yr_data <- 2023
@@ -111,6 +115,17 @@ table(df_data$gamName, useNA = "ifany")
 
 table(df_data$gamName, df_data$periodName, useNA = "ifany")
 
+## Filter 1 ----
+### Remove unused param ----
+# new 2024-10-11
+table(df_data$dep, df_data$layer)
+df_data <- df_data %>%
+  # chla bottom
+  filter(!(dep == "chla" & layer == "Bottom")) %>%
+  # salinity
+  filter(dep != "salinity")
+table(df_data$dep, df_data$layer)
+
 ## Trim Data ----
 # Include only the columns needed for the Shiny app (i.e., remove clutter)
 col_req <- c("station"
@@ -135,10 +150,10 @@ col_req <- c("station"
 df_data <- df_data[, col_req]
 
 
-## Filter ----
-# Create datasets to be used for each file
+## Filter 2 ----
+### Create datasets----
+#   ...to be used for each file
 # periodName defined as pname_yr at top of script
-
 NLT_FA_F_ShortTerm <- dplyr::filter(df_data
                                     , gamName == "Non-Linear Trend"
                                     & periodName == pname_yr)
@@ -270,6 +285,55 @@ fn_plot_year_current <- normalizePath(file.path(path_plot_current
                                              , basename(fn_plot_year)))
 file.copy(fn_plot_year_year, fn_plot_year_current)
 
+# QC, plots ----
+# only NLT, FA-F, LT
+plots_new_exp <- NLT_FA_F_LongTerm %>%
+  # remove plots not expected (DIN and PO4 for bottom)
+  filter(!(dep == "po4" & layer == "Bottom")) %>%
+  filter(!(dep == "din" & layer == "Bottom"))%>%     
+  mutate(layer_plot = case_when(layer == "Bottom" ~ "bot",
+                                layer == "Surface" ~ "surf",
+                                .default = layer)) %>%
+  mutate(plot_name = paste0(station,
+                            "_", 
+                            tolower(dep), 
+                            "_", 
+                            layer_plot)
+         ) %>%
+  pull(plot_name)
+           
+  
+
+plots_new_obs <- gsub("\\.png$",
+                      "",
+                      basename(list.files(path_plot_new, 
+                                          pattern = ".png", 
+                                          recursive = TRUE)))
 
 
+testthat::expect_equal(length(plots_new_obs), length(plots_new_exp))
 
+sum(!plots_new_obs %in% plots_new_exp)
+sum(!plots_new_exp %in% plots_new_obs)
+
+# plots but no data
+plots_new_obs_not_exp <- plots_new_obs[!plots_new_obs %in% plots_new_exp]
+# data but no plots
+plots_new_exp_not_obs <- plots_new_exp[!plots_new_exp %in% plots_new_obs]
+
+# summary
+## data
+table(NLT_FA_F_LongTerm$dep, NLT_FA_F_LongTerm$layer)
+## plots
+df_plots_new_obs <- as.data.frame(matrix(unlist(strsplit(plots_new_obs, "_")), 
+                                         ncol = 3,
+                                         byrow = TRUE))
+names(df_plots_new_obs) <- c("station", "dep", "layer")
+table(df_plots_new_obs$dep, df_plots_new_obs$layer)
+
+
+# save
+write.csv(plots_new_obs_not_exp, 
+          file.path(path_plot_new, "plots_new_no_data.csv"))
+write.csv(plots_new_exp_not_obs, 
+          file.path(path_plot_new, "plots_new_missing.csv"))

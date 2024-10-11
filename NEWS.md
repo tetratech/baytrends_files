@@ -4,7 +4,13 @@ NEWS
 
 <!-- NEWS.md is generated from NEWS.Rmd. Please edit that file -->
 
-    #> Last Update: 2024-10-10 11:15:29.99264
+    #> Last Update: 2024-10-11 11:00:57.614592
+
+# baytrends_files v0.7.19
+
+Released - 2024-10-11
+
+- fix: Update new 2023 to filter out data without plots
 
 # baytrends_files v0.7.18
 

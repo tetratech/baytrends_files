@@ -17,6 +17,12 @@ knitr::opts_chunk$set(
 cat(paste0("Last Update: ",Sys.time()))
 ```
 
+baytrends_files v0.7.19
+===========
+Released - 2024-10-11
+
+* fix: Update new 2023 to filter out data without plots
+
 baytrends_files v0.7.18
 ===========
 Released - 2024-10-10
