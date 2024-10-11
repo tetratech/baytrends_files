@@ -1,7 +1,7 @@
 Package: baytrends_files
 Title: Data Files and Plots for baytrends Shiny App
 Description: Remote file storage to support the baytrendsmap Shiny App.
-Version: 0.7.20
+Version: 0.7.21
 Authors@R: c(
   person("Erik W.", "Leppo", email="Erik.Leppo@tetratech.com", role=c("aut","cre")),
   person("Jon","Harcum", role="aut"))
