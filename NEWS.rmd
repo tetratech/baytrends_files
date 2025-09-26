@@ -17,6 +17,14 @@ knitr::opts_chunk$set(
 cat(paste0("Last Update: ",Sys.time()))
 ```
 
+baytrends_files v0.7.23
+===========
+Released - 2025-09-26
+
+* refactor: Add 2024 data
+* refactor: Create QC script for after update current folder
+* docs: Add Rebecca Murphy as contributor
+
 baytrends_files v0.7.22
 ===========
 Released - 2024-10-11
