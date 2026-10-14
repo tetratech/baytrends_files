@@ -17,6 +17,12 @@ knitr::opts_chunk$set(
 cat(paste0("Last Update: ",Sys.time()))
 ```
 
+baytrends_files v0.7.25
+===========
+Released - 2026-10-14
+
+* refactor: Add 2025 data
+
 baytrends_files v0.7.24
 ===========
 Released - 2025-09-30

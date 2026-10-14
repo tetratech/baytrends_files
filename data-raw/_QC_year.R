@@ -1,8 +1,13 @@
 # baytrends-files
 # QC datasets
 # Erik.Leppo@tetratech.com
-# 2025-09-26
+# 2026-10-14
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# 31 PNG included not in data
+# 386 plot names in data not in files
+
+
+
 
 # Packages ----
 library(testthat)
@@ -13,7 +18,7 @@ dn_data <- "data"
 dn_plots <- "plots_NLT_FA_F_LT" # only have plots for one dataset
 
 # Plots ----
-names_plots_png <- list.files(file.path(dn_year, dn_plots)) 
+names_plots_png <- list.files(file.path(dn_year, dn_plots))
 names_plots_png <- gsub("\\.png$", "", names_plots_png)
 names_plots_png <- names_plots_png[!names_plots_png %in% "_no_plot"]
 
