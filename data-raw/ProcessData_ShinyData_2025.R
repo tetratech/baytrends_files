@@ -56,6 +56,7 @@
 # 2026-10-14
 # 2025 data from Rebecca (2026-10-13)
 # run "_QC_year.R" *after* create pick file
+# 2026-11-10, re-run, old plots still in current
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 # Packages----
@@ -347,8 +348,8 @@ plots_new_obs <- gsub("\\.png$",
 
 testthat::expect_equal(length(plots_new_obs), length(plots_new_exp))
 
-sum(!plots_new_obs %in% plots_new_exp)
-sum(!plots_new_exp %in% plots_new_obs)
+sum(!plots_new_obs %in% plots_new_exp) #20261110, 23
+sum(!plots_new_exp %in% plots_new_obs) #20261110, 2194
 
 # plots but no data
 plots_new_obs_not_exp <- plots_new_obs[!plots_new_obs %in% plots_new_exp]
