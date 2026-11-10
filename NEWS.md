@@ -4,7 +4,13 @@ NEWS
 
 <!-- NEWS.md is generated from NEWS.Rmd. Please edit that file -->
 
-    #> Last Update: 2026-11-10 07:49:04.209906
+    #> Last Update: 2026-11-10 08:41:24.80455
+
+# baytrends_files v0.7.27
+
+Released - 2026-11-10
+
+- fix: Redo 2025 plot and update layer in plots
 
 # baytrends_files v0.7.26
 

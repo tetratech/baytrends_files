@@ -315,8 +315,8 @@ plots_names <- list.files(path_plot_new,
                           full.names = TRUE)
 # rename
 for (i in plots_names) {
-  i_new <- sub("surf\\.png$", "S.png", i)
-  i_new <- sub("bot\\.png$", "B.png", i_new)
+  i_new <- sub("surf\\.png$", "S.png", i, ignore.case = TRUE)
+  i_new <- sub("bot\\.png$", "B.png", i_new, ignore.case = TRUE)
   file.rename(i, i_new)
 }## FOR ~ i
 
